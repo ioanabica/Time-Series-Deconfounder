@@ -41,12 +41,12 @@ python main_time_series_deconfounder.py
 ```
 ```
 Options :
-		--gamma	                             # Parameter controlling the amount of hidden confounding present in the simulated dataset. 
-		--num_simulated_hidden_confounders   # Dimensionality of the simulated hidden confounders. 
-		--num_substitute_confounders         # Dimensionality of the inferred substitutes for the hidden confounders.
-		--results_dir                        # Directory for saving the results.
-		--exp_name                           # Experiment name.
-		--b_hyperparm_tuning                 # Boolean flag for hyperparameter tuning. 
+    --gamma	                             # Parameter controlling the amount of hidden confounding present in the simulated dataset. 
+	--num_simulated_hidden_confounders   # Dimensionality of the simulated hidden confounders. 
+	--num_substitute_confounders         # Dimensionality of the inferred substitutes for the hidden confounders.
+	--results_dir                        # Directory for saving the results.
+	--exp_name                           # Experiment name.
+	--b_hyperparm_tuning                 # Boolean flag for hyperparameter tuning. 
 ```
 
 Outputs:
@@ -74,13 +74,13 @@ For the results in the paper, hyperparameter optimization was run (this can take
 NVIDIA Tesla K80 GPU). However, similar results can be obtained with the default hyperparameters. 
  
 The results in Section 6 in the paper are obtained by setting --num_simulated_hidden_confounders=1 and 
-then inferring latent variables that can act as substitues for the hidden confounders of dimensionalities D_Z = 1 (--num_substitute_hidden_confounders=1) and 
-D_Z = 5 (--num_substitute_hidden_confounders=5). 
+then inferring latent variables that can act as substitues for the hidden confounders of dimensionalities D_Z=1 (--num_substitute_hidden_confounders=1) and 
+D_Z=5 (--num_substitute_hidden_confounders=5). The value for the parameter gamma (which indicates the degree of 
+hidden confounding) is selected from {0.0, 0.2, 0.4, 0.6, 0.8}.
 
 Moreover, Appendix E contains results for --num_simulated_hidden_confounders=3 and for 
 inferring latent var substitutes of dimensionalities D_Z=1 (--num_substitute_confounders=1), D_Z=3 (--num_substitute_confounders=3) and 
-D_Z=5 (--num_substitute_confounders=5). The value for the parameter gamma (which indicates the degree of 
-hidden confounding) is selected from {0.0, 0.2, 0.4, 0.6, 0.8}.
+D_Z=5 (--num_substitute_confounders=5). 
 
 ### Reference
 
