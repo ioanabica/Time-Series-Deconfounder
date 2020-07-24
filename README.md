@@ -41,7 +41,7 @@ python main_time_series_deconfounder.py
 ```
 ```
 Options :
-    --gamma	                             # Parameter controlling the amount of hidden confounding present in the simulated dataset. 
+    	--gamma	                             # Parameter controlling the amount of hidden confounding present in the simulated dataset. 
 	--num_simulated_hidden_confounders   # Dimensionality of the simulated hidden confounders. 
 	--num_substitute_confounders         # Dimensionality of the inferred substitutes for the hidden confounders.
 	--results_dir                        # Directory for saving the results.
