@@ -5,6 +5,8 @@
 
 Code Author: Ioana Bica (ioana.bica95@gmail.com)
 
+## Introduction 
+
 The Time Series Deconfounder is a causal inference method that enables the estimation of treatment 
 effects over time from observational data in the presence of hidden confounders. 
 
